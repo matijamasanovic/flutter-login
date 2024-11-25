@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <title>Flutter Login</title>
+  </head>
+  <body>
+    <div class="header">
+      <p>You don't have account?</p>
+      <button style="cursor: pointer" id="open-modal">Register here!</button>
+    </div>
+    <div class="login-header">
+      <img src="img/flutter-logo.png" alt="" />
+      <h1>Where Conversations Take Flight.</h1>
+    </div>
+
+    <div class="login-form">
+      <form id="loginForm">
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          id="login_email"
+          placeholder="e.g. jake.miller@gmail.com"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="lozinka"
+          id="login_lozinka"
+          placeholder="********"
+        />
+        <button>Log in!</button>
+      </form>
+      <!-- 
+      <div class="login-pic">
+        <img src="img/login-page-pic.png" alt="" />
+      </div> -->
+    </div>
+
+    <div class="login-footer">
+      <ul>
+        <li>Privacy Center</li>
+        <li>Help Center</li>
+        <li>About</li>
+      </ul>
+    </div>
+
+    <div class="register-popup">
+      <button id="close-modal">X</button>
+
+      <h2>Register</h2>
+      <hr />
+      <form id="registrationForm">
+        <div>
+          <label for="korisnicko_ime">Username</label>
+          <input
+            id="korisnicko_ime"
+            type="text"
+            name="korisnicko_ime"
+            placeholder="e.g. jake.miller"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="register_email"
+            name="register_email"
+            placeholder="e.g. jake.miller@gmail.com"
+          />
+        </div>
+
+        <div>
+          <label for="lozinka">Password</label>
+          <input
+            type="password"
+            id="lozinka"
+            name="register_lozinka"
+            placeholder="********"
+          />
+        </div>
+
+        <div>
+          <label>Repeat Password</label>
+          <input
+            type="password"
+            id="ponovi_lozinku"
+            name="ponovi_lozinku"
+            placeholder="********"
+          />
+        </div>
+
+        <div>
+          <button>Register</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/Validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

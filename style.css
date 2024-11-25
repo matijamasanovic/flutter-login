@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 200vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.header button {
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  margin-left: 15px;
+  border-radius: 20px;
+  background-color: #00b2ff;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.header p {
+  font-weight: bold;
+}
+
+.login-header {
+  text-align: center;
+}
+
+.login-header img {
+  max-width: 200px;
+  margin-top: -200px;
+}
+
+.login-pic img {
+  max-width: 400px;
+}
+
+.login-header h1 {
+  font-size: 15px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.login-form button {
+  display: block;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 15px;
+  background-color: #00b2ff;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.login-form input {
+  margin-top: 8px;
+  border: 0;
+  outline: 0;
+  border-bottom: 4px solid #00b2ff;
+  width: 240px;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.login-footer ul {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.login-footer ul li {
+  padding: 20px;
+}
+
+.register-popup img {
+  max-width: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.register-popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-popup hr {
+  border: 5px solid #00b2ff;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 70px;
+}
+
+.register-popup {
+  display: block;
+  font-size: 20px;
+  max-width: 900px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  min-width: 500px;
+  display: none;
+}
+
+.register-popup button {
+  display: block;
+  padding: 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 15px;
+  background-color: #00b2ff;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.register-popup input {
+  border: 0;
+  outline: 0;
+  border-bottom: 4px solid #00b2ff;
+  width: 240px;
+  font-size: 17px;
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.register-popup label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+#close-modal {
+  background: transparent;
+  color: #00b2ff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+#registrationForm li {
+  list-style: none;
+  color: red;
+  font-size: 15px;
+}
+
+.site-container {
+  max-width: 75rem;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-elements {
+  display: flex;
+}
+
+.main-elements div {
+  border: 2px solid lightgray;
+  width: 800px;
+}
+
+.fixed-user {
+  flex: 0.8;
+  text-align: center;
+  padding: 20px;
+}
+
+.fixed-user img {
+  max-width: 150px;
+}
+
+.feed {
+  padding: 20px;
+}
+
+.feed textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 3px solid #00b2ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#post {
+  background-color: #00b2ff;
+  color: white;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.feed form {
+  display: flex;
+  height: 80px;
+  min-width: 100%;
+  border: 0;
+}
+
+#separate {
+  border: 1px solid lightgray;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.fixed-user button {
+  background: #00b2ff;
+  color: white;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#deleteProfile {
+  background-color: red;
+}

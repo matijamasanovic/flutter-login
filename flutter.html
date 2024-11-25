@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flutter</title>
+  </head>
+  <body>
+    <div class="header"></div>
+
+    <div class="site-container">
+      <div class="main-elements">
+        <div class="fixed-user">
+          <img class="profile" src="img/profile-pic.png" alt="" />
+          <p><b id="username"></b></p>
+          <p id="email"></p>
+          <button id="edit-account">Edit Account</button>
+          <button id="logout">Log Out</button>
+        </div>
+        <div class="feed">
+          <form id="postForm">
+            <textarea
+              id="postContent"
+              placeholder="Share your toughts..."
+            ></textarea>
+            <button id="post">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="register-popup">
+      <button id="close-modal">X</button>
+
+      <h2>Edit your profile</h2>
+      <hr />
+      <form id="editForm">
+        <div>
+          <label for="korisnicko_ime">Username</label>
+          <input
+            id="korisnicko_ime"
+            type="text"
+            name="korisnicko_ime"
+            placeholder="e.g. jake.miller"
+          />
+        </div>
+
+        <div>
+          <label for="edit_email">Email</label>
+          <input
+            type="text"
+            id="edit_email"
+            name="edit_email"
+            placeholder="e.g. jake.miller@gmail.com"
+          />
+        </div>
+
+        <div>
+          <button>Edit</button>
+        </div>
+      </form>
+      <hr id="separate" />
+      <button id="deleteProfile">Delete your profile</button>
+    </div>
+
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Post.js"></script>
+    <script src="js/flutter.js"></script>
+  </body>
+</html>
